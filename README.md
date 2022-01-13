@@ -1,7 +1,7 @@
 <p>
     <b>FORK UPDATES:</b>
     <ul>
-        <li>Add new `from` and `to` props to allow pre-selecting a min/max range</li>
+        <li>Add new <code>from</code> and <code>to</code> props to allow pre-selecting a min/max range</li>
     </ul>
 </p>
 <p align="center">
@@ -34,18 +34,18 @@ If you are a try and learn developer, you can start trying the vue-histogram-sli
 
 ### yarn
 
-`yarn add vue-histogram-slider`
+`yarn add @dreysolano/vue-histogram-slider`
 
 ### npm
 
-`npm i vue-histogram-slider`
+`npm i @dreysolano/vue-histogram-slider`
 
 ## 🔧 Usage
 
 ```js
 import Vue from 'vue'
-import HistogramSlider from 'vue-histogram-slider'
-import 'vue-histogram-slider/dist/histogram-slider.css'
+import HistogramSlider from '@dreysolano/vue-histogram-slider'
+import '@dreysolano/vue-histogram-slider/dist/histogram-slider.css'
 
 Vue.component(HistogramSlider.name, HistogramSlider)
 ```

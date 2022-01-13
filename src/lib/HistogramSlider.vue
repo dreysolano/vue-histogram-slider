@@ -67,6 +67,8 @@ export default {
     const width = this.width - 20
     const min = this.min || d3Array.min(this.data)
     const max = this.max || d3Array.max(this.data)
+    const from = this.from || min
+    const to = this.to || max
     const isTypeSingle = this.type == 'single'
     var svg, histogram, x, y, hist, bins, colors, brush
 
@@ -102,7 +104,7 @@ export default {
         if (this.clip) {
           x.domain([min, max])
           updateHistogram([min, max])
-          const pos = { from: min, to: max }
+          const pos = { from: from, to: to }
           this.update(pos)
           this.$emit('finish', pos)
           this.$emit('change', pos)
@@ -161,8 +163,8 @@ export default {
         skin: 'round',
         min: min,
         max: max,
-        from: min,
-        to: max,
+        from: from,
+        to: to,
         type: this.type,
         grid: this.grid,
         step: this.step,

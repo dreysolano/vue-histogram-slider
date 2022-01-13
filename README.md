@@ -1,4 +1,10 @@
 <p align="center">
+    <b>UPDATES:</b>
+    <ul>
+        <li>Add new `from` and `to` props to allow pre-selecting a min/max range</li>
+    </ul>
+</p>
+<p align="center">
     <img src="https://github.com/oguzhaninan/vue-histogram-slider/raw/master/resources/header.png" width="500">
 </p>
 <p align="center">
@@ -54,6 +60,8 @@ Property |Type|Default|Description
 ---|:---:|:---:|---
 min|number|1|Set slider minimum value
 max|number|100|Set slider maximum value
+from|number|{min}|Set left/min slider position
+to|number|{max}|Set right/max slider position
 data|array| - |Data for histogram
 block|boolean|false|Locks slider and makes it inactive
 grid|boolean|true|Enables grid of values.

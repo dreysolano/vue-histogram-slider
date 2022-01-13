@@ -1,12 +1,12 @@
 {
-  "name": "vue-histogram-slider",
+  "name": "@dreysolano/vue-histogram-slider",
   "description": "Range slider with histogram for vue.js",
-  "version": "0.3.8",
+  "version": "0.1.0",
   "main": "dist/histogram-slider.umd.min.js",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/oguzhaninan/vue-histogram-slider.git"
+    "url": "https://github.com/dreysolano/vue-histogram-slider.git"
   },
   "keywords": [
     "vue",
